@@ -1,0 +1,144 @@
+@font-face {
+  font-family: poppins;
+  src: url("https://fonts.google.com/specimen/Poppins");
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+#main-container{
+  margin: auto;
+  width: 85%;
+}
+
+#top-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.first-header {
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 275;
+  color: #4D4F62;
+}
+
+.first-title {
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.first-paragraph {
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  opacity: 50%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  color: #4D4F62;
+}
+
+#box-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.column{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.box{
+  height: 250px;
+  border: solid;
+  border-radius: 3%;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: transparent;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.box-icon {
+  align-self: flex-end;
+  bottom: 0px;
+  margin-top: auto;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.box-header{
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4D4F62;
+  margin-top: 27px;
+  margin-left: 28px;
+  margin-bottom: 0px;
+}
+
+.box-text{
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  margin-top: 1px;
+  margin-left: 29px;
+  margin-right: 28px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.09px;
+  color: #4D4F62;
+  opacity: 50%;
+}
+
+#supervisor{
+  background-color: #FFFFFF;
+  border-color: #44d3d2;
+}
+
+#team-builder{
+  background-color: #FFFFFF;
+  border-color: #EA5454;
+  margin-bottom: 25px;
+}
+
+#karma{
+  background-color: #FFFFFF;
+  border-color: #FCAE4A;
+}
+
+#calculator{
+  background-color: #FFFFFF;
+  border-color: #5493F2;
+}
+
+@media (min-width: 375px) {
+  #box-container{
+    flex-direction: row;
+  } 
+
+  .box {
+    margin-bottom: 25px;
+  }
+
+  .column {
+    width: 33.333%;
+  }
+  
+  #main-container {
+    width: 67%;
+  }
+
+  #team-builder{
+    margin-bottom: 20px;
+  }
+}
